@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>Cal Seller Details</title>
-</head>
-
-<body>
-    <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-
+{% block body %}
     <div class="container">
 
         <!-- heading -->
-        <h1 class="display-6" color="red">Seller Details</h1>
+        <h1 class="display-6" color="red">Buyer Details</h1>
 
-
-        <!-- Seller Details Form -->
+        <!-- Buyer Details Form -->
         <form class="row g-3">
             <div class="col-md-6">
                 <label for="inputname" class="form-label">Name</label>
@@ -50,10 +36,6 @@
                 <label for="inputnumber" class="form-label">Identity Number</label>
                 <input type="number" class="form-control" id="inputnumber" placeholder="Identity Number">
             </div>
-            <div class="mb-3">
-                <label for="formFileSm" class="form-label">Identity picture</label>
-                <input class="form-control form-control-sm" id="formFileSm" type="file">
-            </div>
             <div class="col-12">
                 <label for="inputAddress" class="form-label">Temporary Address</label>
                 <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
@@ -62,7 +44,6 @@
                 <label for="inputAddress2" class="form-label">Permenant Address</label>
                 <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
             </div>
-
             <div class="col-md-4">
                 <label for="inputState" class="form-label">Seller</label>
                 <select id="inputState" class="form-select">
@@ -73,21 +54,5 @@
                 </select>
             </div>
 
-            <div class="form-floating">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Remarks</label>
-            </div>
 
-
-            <div class="col-12">
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </div>
-        </form>
-        <!-- !Seller Details Form -->
-
-    </div>
-
-</body>
-
-</html>
+{% endblock body %}
