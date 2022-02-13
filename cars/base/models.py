@@ -25,6 +25,10 @@ class Seller(models.Model):
     seller_type = models.CharField(max_length= 20)
     remarks = models.TextField() 
 
+    def __str__(self):
+        return self.name
+        
+
 class Buyer(models.Model):
     name = models.CharField(max_length= 100)
     phone = models.CharField(max_length= 15)
@@ -37,6 +41,9 @@ class Buyer(models.Model):
     address = models.TextField()
     buyer_type = models.CharField(max_length= 20)
     remarks = models.TextField() 
+
+    def __str__(self):
+        return self.name
 
 
 
