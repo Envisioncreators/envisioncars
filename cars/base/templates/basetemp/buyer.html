@@ -1,75 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "basetemp/base.html" %}
+{% block body %}
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+<div class="container">
+    <!-- heading -->
+    <h1 class="display-6" color="red">Buyer Details</h1>
 
-    <title>Car Buyer Details</title>
-</head>
+    <!-- Buyer Details Form -->
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="inputname" class="form-label">Name</label>
+            <input type="Name" class="form-control" id="inpuname" placeholder="*Name" required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputnumber" class="form-label">Phone Number</label>
+            <input type="number" class="form-control" id="inputnumber" placeholder="*Phone Number" required>
+        </div>
+        <div class="col-md-6">
+            <label for="inputnumber" class="form-label">Phone Number(Whatsapp)</label>
+            <input type="number" class="form-control" id="inputnumber" placeholder="Phone Number">
+        </div>
+        <div class="col-md-6">
+            <label for="inputemail" class="form-label">Email</label>
+            <input type="mail" class="form-control" id="inputemail" placeholder="Mail">
+        </div>
+        <div class="col-md-4">
+            <label for="inputState" class="form-label">Identity</label>
+            <select id="inputState" class="form-select">
+                <option selected>Select</option>
+                <option>Aadhar Card</option>
+                <option>Driving License</option>
+            </select>
+        </div>
+        <div class="col-md-6">
+            <label for="inputnumber" class="form-label">Identity Number</label>
+            <input type="number" class="form-control" id="inputnumber" placeholder="Identity Number">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress" class="form-label">Temporary Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+        </div>
+        <div class="col-12">
+            <label for="inputAddress2" class="form-label">Permenant Address</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="col-md-4">
+            <label for="inputState" class="form-label">Seller</label>
+            <select id="inputState" class="form-select">
+                <option selected>Select</option>
+                <option>Customer</option>
+                <option>Dealer</option>
+                <option>Broker</option>
+            </select>
+        </div>
 
-<body>
-    <div class="container">
-
-        <!-- heading -->
-        <h1 class="display-6" color="red">Buyer Details</h1>
-
-        <!-- Buyer Details Form -->
-        <form class="row g-3">
-            <div class="col-md-6">
-                <label for="inputname" class="form-label">Name</label>
-                <input type="Name" class="form-control" id="inpuname" placeholder="*Name" required>
-            </div>
-            <div class="col-md-6">
-                <label for="inputnumber" class="form-label">Phone Number</label>
-                <input type="number" class="form-control" id="inputnumber" placeholder="*Phone Number" required>
-            </div>
-            <div class="col-md-6">
-                <label for="inputnumber" class="form-label">Phone Number(Whatsapp)</label>
-                <input type="number" class="form-control" id="inputnumber" placeholder="Phone Number">
-            </div>
-            <div class="col-md-6">
-                <label for="inputemail" class="form-label">Email</label>
-                <input type="mail" class="form-control" id="inputemail" placeholder="Mail">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">Identity</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Select</option>
-                    <option>Aadhar Card</option>
-                    <option>Driving License</option>
-                </select>
-            </div>
-            <div class="col-md-6">
-                <label for="inputnumber" class="form-label">Identity Number</label>
-                <input type="number" class="form-control" id="inputnumber" placeholder="Identity Number">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress" class="form-label">Temporary Address</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-            </div>
-            <div class="col-12">
-                <label for="inputAddress2" class="form-label">Permenant Address</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-            </div>
-            <div class="col-md-4">
-                <label for="inputState" class="form-label">Seller</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Select</option>
-                    <option>Customer</option>
-                    <option>Dealer</option>
-                    <option>Broker</option>
-                </select>
-            </div>
+</div>
 
 
-
-
-            <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
-</body>
-
-</html>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+{% endblock %}

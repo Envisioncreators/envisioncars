@@ -6,3 +6,15 @@ from django.http import HttpResponse
 
 def index(request):
     return render(request, "basetemp/index.html")
+
+
+def test(request):
+    return HttpResponse("Hello this is test_1")
+
+
+def buyer(request):
+    return render(request, "basetemp/buyer.html")
+
+
+def seller(request):
+    return render(request, "basetemp/seller.html")
